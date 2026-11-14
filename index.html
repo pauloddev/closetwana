@@ -251,6 +251,13 @@ section.inv + section.inv{margin-top:0}
 .cf-dots i{width:18px;height:1px;background:var(--line);transition:background .4s,width .4s}
 .cf-dots i.on{width:34px;background:var(--rose-dark)}
 
+#cores .split{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);align-items:center}
+#cores .split .txt{justify-content:center;gap:clamp(18px,2vw,28px);padding-block:0}
+#cores .split .txt>*{margin:0}
+#cores .split .txt .top h2{margin-bottom:0}
+#cores .split .fig{width:100%;max-width:520px;justify-self:end}
+@media (max-width:860px){#cores .split{grid-template-columns:1fr}#cores .split .fig{max-width:none}}
+
 /* ---------- colecoes index ---------- */
 .idx{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);align-items:stretch}
 .idx ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;justify-content:space-between;border-top:1px solid var(--line-soft)}
