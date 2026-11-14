@@ -211,8 +211,12 @@ section.inv + section.inv{margin-top:0}
 
 /* ---------- manifesto ---------- */
 .tri{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:var(--gap);align-items:stretch}
-.tri .txt{display:flex;flex-direction:column;justify-content:space-between;text-align:center;padding:clamp(6px,1vw,14px) clamp(4px,1.4vw,26px)}
-.tri .txt h2{font-size:clamp(24px,2.3vw,38px)}
+.tri .txt{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:clamp(20px,2.2vw,32px);text-align:center;padding:clamp(6px,1vw,14px) clamp(8px,1.6vw,28px)}
+.tri .txt>*{margin:0;width:100%}
+.tri .txt .eyebrow{justify-content:center}
+.tri .txt h2 .ln{text-align:center}
+.tri>*,.split>*,.hero .grid>*,.idx>*,.visit>*,.feat>*,.vgrid>*,.ig>*,.sec-head>*,.info>*,.fgrid>*,.visit .right>*{min-width:0}
+.tri .txt h2{font-size:clamp(22px,2.05vw,34px)}
 .tri .sig{font-family:var(--label);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-soft)}
 .tri .sig b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(17px,1.35vw,22px);letter-spacing:.1em;margin-bottom:10px}
 
