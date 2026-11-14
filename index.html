@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Closet Wana | Moda Feminina em João Pessoa - PB</title>
+<meta name="description" content="Descubra a Closet Wana em João Pessoa. Moda feminina, cores, estampas e combinações para mulheres que valorizam elegância, feminilidade e personalidade.">
+<meta name="theme-color" content="#FFE7E7">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Closet Wana">
+<meta property="og:title" content="Closet Wana | Moda Feminina em João Pessoa - PB">
+<meta property="og:description" content="Seu estilo tem cores. A Wana tem combinações. Moda feminina elegante no Cristo Redentor, João Pessoa - PB.">
+<meta property="og:url" content="https://closetwana.vercel.app/">
+<meta property="og:image" content="https://closetwana.vercel.app/m/og.jpg">
+<meta name="twitter:image" content="https://closetwana.vercel.app/m/og.jpg">
+<link rel="canonical" href="https://closetwana.vercel.app/">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="m/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="m/apple-touch-icon.png">
+<link rel="preload" href="f/agelast.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="f/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="m/hero-l.webp" as="image" imagesrcset="m/hero-s.webp 600w, m/hero-l.webp 1440w" imagesizes="(max-width: 860px) 100vw, 46vw">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ClothingStore","name":"Closet Wana","alternateName":"Wana by Wanessa Gomes","description":"Moda feminina em João Pessoa: cores, estampas e combinações com atendimento personalizado.","image":"m/loja-l.webp","logo":"m/logo@2x.png","email":"closet.wana@gmail.com","founder":{"@type":"Person","name":"Wanessa Gomes"},"foundingDate":"2020","taxID":"39.948.330/0001-49","address":{"@type":"PostalAddress","streetAddress":"Rua José Francisco da Silva, 475","addressLocality":"João Pessoa","addressRegion":"PB","postalCode":"58070-410","addressCountry":"BR","description":"Cristo Redentor"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"15:00"}],"sameAs":["https://www.instagram.com/closet.wana","https://www.facebook.com/Closet.wana/"]}
+</script>
+<style>
+@font-face{font-family:"Agelast";src:url(f/agelast.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Jost";src:url(f/jost-latin-wght-normal.woff2) format("woff2");font-weight:100 900;font-display:swap}
+
+:root{
+  --bg:#FFE7E7;
+  --bg-deep:#FADADA;
+  --ink:#5E3A31;
+  --ink-soft:#7D5449;
+  --rose-1:#B68173;--rose-2:#D9A99B;--rose-3:#F4CFC7;
+  --rose-dark:#9A6658;
+  --line:rgba(182,129,115,.38);
+  --line-soft:rgba(182,129,115,.2);
+  --metal:linear-gradient(110deg,#B68173 0%,#D9A99B 25%,#F4CFC7 50%,#D9A99B 75%,#B68173 100%);
+  --metal-text:linear-gradient(110deg,#8A5547 0%,#A8705F 20%,#B68173 34%,#D9A99B 46%,#ECBFB3 50%,#D9A99B 54%,#B68173 66%,#A8705F 80%,#8A5547 100%);
+  --serif:"Agelast","Jost",sans-serif;
+  --label:"Agelast","Jost",sans-serif;
+  --sans:"Jost",system-ui,sans-serif;
+  --pad:clamp(20px,5.2vw,84px);
+  --max:1360px;
+  --gap:clamp(14px,2.2vw,32px);
+  --sec:clamp(64px,7.5vw,112px);
+  --ease:cubic-bezier(.22,.7,.1,1);
+  --ease-io:cubic-bezier(.7,0,.2,1);
+  --hdr:78px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:var(--hdr)}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:350;font-size:clamp(16px,1.08vw,18px);line-height:1.7;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+body.locked{overflow:hidden}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+:focus-visible{outline:1.5px solid var(--rose-dark);outline-offset:4px}
+::selection{background:var(--rose-2);color:#fff}
+.skip{position:absolute;left:-999px;top:8px;z-index:200;background:var(--bg);padding:10px 16px;border:1px solid var(--line)}
+.skip:focus{left:8px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- type ---------- */
+.metal{background:var(--metal-text);background-size:260% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--rose-1);animation:sheen 11s linear infinite}
+@keyframes sheen{from{background-position:130% 0}to{background-position:-130% 0}}
+.eyebrow{font-family:var(--label);font-size:clamp(12px,.85vw,13.5px);letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);display:flex;align-items:center;gap:14px;margin:0 0 clamp(18px,2vw,28px)}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--metal)}
+.eyebrow.c{justify-content:center}
+.eyebrow.c::after{content:"";width:34px;height:1px;background:var(--metal)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;line-height:1.16;letter-spacing:.06em;overflow-wrap:break-word;-webkit-text-stroke:.25px var(--ink)}
+h1{font-size:clamp(30px,3.7vw,60px)}
+h2{font-size:clamp(26px,2.85vw,46px)}
+h3{font-size:clamp(18px,1.4vw,22px);line-height:1.3}
+h1 em,h2 em,h3 em{font-style:normal}
+.metal{-webkit-text-stroke:.25px rgba(154,102,88,.55)}
+/* textos pequenos em Agelast: 5% mais grossos */
+.eyebrow,.nav a,.btn,.link-u,.hero .meta,.tri .sig,.cf-count,.idx .n,.swatches button,.figlab,.ceo .role,.ceo .since span,.info h3,.status,.fgrid h4,.fbot,.mnav a.big small,.mnav .mfoot,#intro .by{-webkit-text-stroke:.35px currentColor;font-weight:400}
+.ln{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
+.ln>span{display:block}
+.lead{font-size:clamp(17px,1.3vw,21px);line-height:1.65;color:var(--ink-soft);max-width:34em;margin:0}
+p{margin:0 0 1em}
+.quote{font-family:var(--sans);font-weight:300;font-style:italic;font-size:clamp(19px,1.55vw,25px);line-height:1.5;color:var(--ink)}
+
+/* ---------- layout ---------- */
+.wrap{width:100%;max-width:calc(var(--max) + var(--pad)*2);margin:0 auto;padding-inline:var(--pad)}
+section{position:relative;padding-block:var(--sec) 0}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);align-items:end;margin-bottom:clamp(30px,3.6vw,54px)}
+.sec-head .lead{justify-self:end}
+.sec-num{display:none;font-family:var(--label);font-size:11px;letter-spacing:.3em;color:var(--rose-1)}
+.rule{height:1px;background:linear-gradient(90deg,transparent,var(--rose-2) 18%,var(--rose-1) 50%,var(--rose-2) 82%,transparent);border:0;margin:0;opacity:.6}
+
+/* ---------- seções invertidas ---------- */
+section.inv{color:var(--ink);padding-bottom:var(--sec);margin-top:var(--sec);padding-top:var(--sec);isolation:isolate;
+  --ink:#FFE7E7;--ink-soft:rgba(255,231,231,.8);--line:rgba(255,231,231,.45);--line-soft:rgba(255,231,231,.22);--bg-deep:#6E4236;--rose-dark:#F4CFC7;
+  --metal-text:linear-gradient(110deg,#E8B9AC 0%,#F4CFC7 25%,#FFF3F0 50%,#F4CFC7 75%,#E8B9AC 100%)}
+section.inv::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(165deg,#74463A 0%,#8C5949 55%,#9E6A5A 100%);clip-path:inset(var(--ci,6%) 0);transition:clip-path .2s linear}
+section.inv .sec-num{top:calc(var(--sec) - 54px);color:#F4CFC7}
+section.inv .btn--line{color:var(--ink);box-shadow:inset 0 0 0 1px rgba(255,231,231,.7)}
+section.inv .btn--line:hover{color:#4B2C24}
+section.inv .cf-ctrl button{box-shadow:inset 0 0 0 1px rgba(255,231,231,.6)}
+section.inv .cf-ctrl button:hover{color:#4B2C24}
+section.inv .eyebrow::before,section.inv .eyebrow::after{background:linear-gradient(90deg,#F4CFC7,#FFE7E7)}
+section.inv .pillars p,section.inv p{color:var(--ink-soft)}
+section.inv + section{padding-top:var(--sec)}
+section.inv + section.inv{margin-top:0}
+/* transição entre seções */
+.sx{opacity:.001;transform:translateY(46px)}
+.sx.in{opacity:1;transform:none;transition:opacity 1.2s var(--ease),transform 1.4s var(--ease)}
+
+/* ---------- buttons ---------- */
+.btn{--h:54px;position:relative;display:inline-flex;align-items:center;justify-content:center;gap:12px;height:var(--h);padding:0 30px;font-family:var(--label);font-size:13px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;border-radius:0;isolation:isolate;overflow:hidden;transition:color .5s var(--ease),transform .5s var(--ease)}
+.btn--solid{color:#4B2C24;background:var(--metal);background-size:220% 100%;background-position:0 0;box-shadow:inset 0 0 0 1px rgba(154,102,88,.35),0 10px 30px -14px rgba(154,102,88,.6);transition:background-position 1.1s var(--ease),box-shadow .5s,transform .5s var(--ease)}
+.btn--solid:hover{background-position:100% 0;transform:translateY(-2px);box-shadow:inset 0 0 0 1px rgba(154,102,88,.5),0 16px 34px -14px rgba(154,102,88,.75)}
+.btn--line{color:var(--ink);box-shadow:inset 0 0 0 1px var(--rose-1)}
+.btn--line::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--metal);transform:scaleX(0);transform-origin:right;transition:transform .7s var(--ease)}
+.btn--line:hover::before{transform:scaleX(1);transform-origin:left}
+.btn--line:hover{color:#4B2C24}
+.btn svg{width:16px;height:16px;flex:none}
+.btns{display:flex;flex-wrap:wrap;gap:14px}
+.link-u{position:relative;font-family:var(--label);font-size:12px;letter-spacing:.24em;text-transform:uppercase}
+.link-u::after{content:"";position:absolute;left:0;bottom:-6px;width:100%;height:1px;background:var(--metal);transform:scaleX(.35);transform-origin:left;transition:transform .6s var(--ease)}
+.link-u:hover::after{transform:scaleX(1)}
+
+/* ---------- media ---------- */
+.fig{position:relative;margin:0;aspect-ratio:4/5;overflow:hidden;background:var(--bg-deep)}
+.fig img,.fig video{width:100%;height:100%;object-fit:cover}
+.fig figcaption{position:absolute;left:0;right:0;bottom:0;padding:16px 18px;font-family:var(--label);font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:#fff;background:linear-gradient(transparent,rgba(60,32,26,.45))}
+/* curtain reveal */
+.rv-img::after{content:"";position:absolute;inset:-1px;z-index:4;background:var(--bg);transform-origin:50% 0;transition:transform 1.45s var(--ease-io);pointer-events:none}
+.rv-img.in::after{transform:scaleY(0)}
+.rv-img img{transform:scale(1.14)}
+.rv-img.in img{transform:scale(1);transition:transform 2.2s var(--ease),opacity 1s var(--ease)}
+.rv-img.d1::after{transition-delay:.12s}.rv-img.d2::after{transition-delay:.24s}
+.rv{opacity:0;transform:translateY(28px)}
+.rv.in{opacity:1;transform:none;transition:opacity 1.1s var(--ease),transform 1.1s var(--ease)}
+.rv-ln .ln>span{transform:translateY(108%)}
+.rv-ln.in .ln>span{transform:none;transition:transform 1.25s var(--ease)}
+.rv-ln.in .ln:nth-child(2)>span{transition-delay:.1s}
+.rv-ln.in .ln:nth-child(3)>span{transition-delay:.2s}
+.rv-ln.in .ln:nth-child(4)>span{transition-delay:.3s}
+.d1{transition-delay:.12s!important}.d2{transition-delay:.24s!important}.d3{transition-delay:.36s!important}.d4{transition-delay:.48s!important}
+
+/* ---------- intro ---------- */
+#intro{position:fixed;inset:0;z-index:100;background:var(--bg);display:grid;place-items:center;transition:transform 1.25s var(--ease-io)}
+#intro.out{transform:translateY(-100%)}
+#intro.gone{display:none}
+#intro .lg{width:min(62vw,420px);height:auto;overflow:visible}
+#intro .lg line{stroke-dasharray:120;stroke-dashoffset:120;animation:draw 1.15s var(--ease) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+#intro{grid-auto-flow:row;align-content:center;justify-items:center;gap:clamp(24px,3.4vw,40px)}
+#intro .by{margin:0;text-align:center;font-family:var(--label);font-size:clamp(15px,1.6vw,22px);letter-spacing:.24em;color:var(--ink);opacity:0;transform:translateY(12px);animation:byin 1s var(--ease) 1.15s forwards}
+@keyframes byin{to{opacity:1;transform:none}}
+#intro .bar{position:absolute;left:50%;top:calc(50% + min(10vw,72px));width:min(40vw,240px);height:1px;transform:translateX(-50%);background:var(--line-soft);overflow:hidden}
+#intro .bar::after{content:"";position:absolute;inset:0;background:var(--metal);transform:scaleX(0);transform-origin:left;animation:bar 2s var(--ease) .2s forwards}
+@keyframes bar{to{transform:scaleX(1)}}
+@keyframes fade{to{opacity:1}}
+
+/* ---------- header ---------- */
+.hdr{position:fixed;inset:0 0 auto;z-index:50;height:var(--hdr);transition:background .5s,box-shadow .5s,transform .6s var(--ease)}
+.hdr.solid{background:rgba(255,231,231,.94);-webkit-backdrop-filter:saturate(1.2);box-shadow:0 1px 0 var(--line-soft)}
+.hdr .wrap{height:100%;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px}
+.hdr .brand{display:inline-flex;align-items:center;width:max-content}
+.hdr .brand svg{height:21px;width:auto}
+.nav{display:flex;gap:clamp(18px,2.2vw,38px)}
+.nav a{position:relative;font-family:var(--label);font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);padding:6px 0}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--metal);transform:scaleX(0);transition:transform .5s var(--ease)}
+.nav a:hover::after,.nav a.on::after{transform:scaleX(1)}
+.hdr .btn{--h:42px;padding:0 20px;font-size:11px;justify-self:end}
+.burger{display:none;justify-self:end;width:44px;height:44px;position:relative}
+.burger i{position:absolute;left:10px;right:10px;height:1px;background:var(--ink);transition:transform .5s var(--ease),opacity .3s}
+.burger i:nth-child(1){top:17px}.burger i:nth-child(2){top:26px;left:18px}
+.menu-open .burger i:nth-child(1){transform:translateY(4.5px) rotate(45deg)}
+.menu-open .burger i:nth-child(2){left:10px;transform:translateY(-4.5px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:49;background:var(--bg);display:flex;flex-direction:column;justify-content:center;padding:calc(var(--hdr) + 20px) var(--pad) 40px;clip-path:inset(0 0 100% 0);transition:clip-path .9s var(--ease-io);visibility:hidden}
+.menu-open .mnav{clip-path:inset(0 0 0 0);visibility:visible}
+.mnav a.big{font-family:var(--serif);letter-spacing:.08em;-webkit-text-stroke:.3px currentColor;font-size:clamp(24px,6.6vw,36px);line-height:1.25;display:flex;align-items:baseline;gap:16px;opacity:0;transform:translateY(20px);transition:opacity .6s,transform .8s var(--ease)}
+.mnav a.big small{font-family:var(--label);font-size:11px;letter-spacing:.2em;color:var(--rose-1)}
+.menu-open .mnav a.big{opacity:1;transform:none}
+.menu-open .mnav a.big:nth-child(2){transition-delay:.06s}.menu-open .mnav a.big:nth-child(3){transition-delay:.12s}.menu-open .mnav a.big:nth-child(4){transition-delay:.18s}.menu-open .mnav a.big:nth-child(5){transition-delay:.24s}.menu-open .mnav a.big:nth-child(6){transition-delay:.3s}
+.mnav .btn{margin-top:36px;align-self:flex-start}
+.mnav .mfoot{margin-top:auto;font-family:var(--label);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft)}
+
+/* ---------- hero ---------- */
+.hero{padding-top:calc(var(--hdr) + clamp(18px,3vw,40px));padding-bottom:0}
+.hero .grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);align-items:stretch}
+.hero .txt{display:flex;flex-direction:column;justify-content:space-between;padding-block:clamp(4px,1vw,14px);min-height:100%}
+.hero .meta{display:flex;justify-content:space-between;gap:20px;font-family:var(--label);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);padding-top:22px;border-top:1px solid var(--line-soft)}
+.hero h1{margin-bottom:clamp(22px,2.5vw,36px)}
+.hero .lead{margin-bottom:clamp(28px,3vw,44px)}
+.hero .fig{height:min(calc(100svh - var(--hdr) - 70px),860px);min-height:560px;width:auto;justify-self:end;aspect-ratio:4/5;max-width:100%}
+.hero .fig img{animation:kb 22s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.06)}}
+.hero .tag{position:absolute;left:18px;bottom:18px;right:18px;display:flex;justify-content:space-between;font-family:var(--label);font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:#fff;text-shadow:0 1px 10px rgba(0,0,0,.25)}
+.scroll-cue{display:inline-flex;align-items:center;gap:12px}
+.scroll-cue i{width:1px;height:34px;background:var(--line);position:relative;overflow:hidden}
+.scroll-cue i::after{content:"";position:absolute;left:0;top:-40%;width:1px;height:40%;background:var(--rose-dark);animation:cue 2.4s var(--ease) infinite}
+@keyframes cue{to{top:100%}}
+
+/* ---------- marquee ---------- */
+.marq{margin-top:var(--sec);border-block:1px solid var(--line-soft);overflow:hidden;padding:22px 0;white-space:nowrap}
+.marq .track{display:inline-flex;animation:marq 42s linear infinite}
+.marq span{font-family:var(--serif);letter-spacing:.12em;-webkit-text-stroke:.3px var(--ink);font-size:clamp(20px,2.2vw,34px);padding-inline:clamp(22px,3vw,48px);display:inline-flex;align-items:center;gap:clamp(22px,3vw,48px)}
+.marq span::after{content:"";width:9px;height:9px;transform:rotate(45deg);background:var(--metal)}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* ---------- manifesto ---------- */
+.tri{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:var(--gap);align-items:stretch}
+.tri .txt{display:flex;flex-direction:column;justify-content:space-between;text-align:center;padding:clamp(6px,1vw,14px) clamp(4px,1.4vw,26px)}
+.tri .txt h2{font-size:clamp(24px,2.3vw,38px)}
+.tri .sig{font-family:var(--label);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-soft)}
+.tri .sig b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(17px,1.35vw,22px);letter-spacing:.1em;margin-bottom:10px}
+
+/* ---------- split ---------- */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);align-items:stretch}
+.split .txt{display:flex;flex-direction:column;justify-content:space-between;padding-block:clamp(4px,1vw,14px)}
+.split.rev .txt{order:2}
+.split .txt .top h2{margin-bottom:clamp(22px,2.4vw,34px)}
+.split .fig{width:100%}
+
+/* ---------- coverflow ---------- */
+.cf{position:relative;margin-top:clamp(36px,4.5vw,64px);user-select:none;-webkit-user-select:none}
+.cf-stage{position:relative;overflow:hidden;margin-inline:calc(var(--pad) * -1);height:calc(var(--cw) * 1.25);--cw:clamp(210px,18.2vw,262px);touch-action:pan-y}
+.cf-item{position:absolute;left:50%;top:0;width:var(--cw);aspect-ratio:4/5;margin-left:calc(var(--cw) / -2);overflow:hidden;background:var(--bg-deep);transition:transform .9s var(--ease),opacity .9s var(--ease),filter .9s var(--ease);will-change:transform;cursor:pointer}
+.cf-item img,.cf-item video{width:100%;height:100%;object-fit:cover;pointer-events:none}
+.cf-item.active{cursor:default;box-shadow:0 30px 60px -30px rgba(94,58,49,.45)}
+.cf-item .play{position:absolute;inset:0;display:grid;place-items:center;opacity:0;transition:opacity .4s}
+.cf-item:not(.active) .play{opacity:1}
+.cf-item .play i{width:54px;height:54px;border-radius:50%;border:1px solid rgba(255,255,255,.8);display:grid;place-items:center;background:rgba(94,58,49,.15)}
+.cf-item .play i::after{content:"";margin-left:4px;border-left:11px solid #fff;border-block:7px solid transparent}
+.cf-item .prog{position:absolute;left:10px;right:10px;bottom:10px;height:1px;background:rgba(255,255,255,.35);opacity:0}
+.cf-item.active .prog{opacity:1}
+.cf-item .prog b{display:block;height:100%;width:0;background:#fff}
+.cf-bar{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px;margin-top:clamp(28px,3vw,44px)}
+.cf-cap{font-family:var(--serif);letter-spacing:.14em;-webkit-text-stroke:.3px currentColor;font-size:clamp(13px,1vw,15px);min-height:1.4em;transition:opacity .4s}
+.cf-ctrl{display:flex;align-items:center;gap:22px}
+.cf-ctrl button{width:52px;height:52px;border-radius:50%;box-shadow:inset 0 0 0 1px var(--rose-1);display:grid;place-items:center;transition:background .5s,transform .4s var(--ease)}
+.cf-ctrl button:hover{background:var(--metal);transform:scale(1.05)}
+.cf-ctrl svg{width:18px;height:18px}
+.cf-count{font-family:var(--label);font-size:12px;letter-spacing:.24em;min-width:72px;text-align:center}
+.cf-dots{display:flex;gap:6px;justify-content:flex-end}
+.cf-dots i{width:18px;height:1px;background:var(--line);transition:background .4s,width .4s}
+.cf-dots i.on{width:34px;background:var(--rose-dark)}
+
+/* ---------- colecoes index ---------- */
+.idx{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);align-items:stretch}
+.idx ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;justify-content:space-between;border-top:1px solid var(--line-soft)}
+.idx li{border-bottom:1px solid var(--line-soft);flex:1;display:flex}
+.idx button{width:100%;text-align:left;display:grid;grid-template-columns:52px 1fr;align-items:center;column-gap:10px;padding:10px 0;position:relative}
+.idx .n{font-family:var(--label);font-size:11px;letter-spacing:.2em;color:var(--rose-1)}
+.idx .t{font-family:var(--serif);letter-spacing:.08em;-webkit-text-stroke:.3px currentColor;font-size:clamp(18px,1.75vw,28px);line-height:1.2;transition:transform .7s var(--ease),color .5s}
+.idx .p{grid-column:2;font-size:15px;color:var(--ink-soft);max-height:0;opacity:0;overflow:hidden;transition:max-height .7s var(--ease),opacity .6s,margin .6s}
+.idx button::after{content:"";position:absolute;right:0;top:50%;width:28px;height:1px;background:var(--metal);transform:scaleX(0);transform-origin:right;transition:transform .6s var(--ease)}
+.idx li.on .t{transform:translateX(10px);color:var(--rose-dark)}
+.idx li.on .p{max-height:4.6em;opacity:1;margin-top:4px}
+.idx li.on button::after{transform:scaleX(1)}
+.idx .stack{position:relative}
+.idx .stack img{position:absolute;inset:0;opacity:0;transform:scale(1.06);transition:opacity 1s var(--ease),transform 1.6s var(--ease)}
+.idx .stack img.on{opacity:1;transform:scale(1)}
+.idx .stack .lbl{position:absolute;left:18px;bottom:16px;z-index:2;font-family:var(--label);font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.3)}
+.idx-note{margin-top:22px;font-size:13.5px;color:var(--ink-soft)}
+
+/* ---------- versatilidade ---------- */
+.vgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:var(--gap)}
+.vgrid .it{display:flex;flex-direction:column}
+.vgrid .it .figlab{justify-content:center;gap:10px}
+.vgrid .it .figlab i{width:22px;height:2px;background:var(--c);align-self:center}
+.figlab{display:flex;justify-content:space-between;margin-top:14px;font-family:var(--label);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft)}
+
+/* ---------- ceo ---------- */
+.ceo .txt{background:var(--bg-deep);padding:clamp(28px,4vw,64px);position:relative}
+.ceo .name{font-family:var(--serif);font-size:clamp(34px,4.2vw,68px);line-height:1.1;letter-spacing:.08em;margin:0 0 clamp(18px,2vw,26px)}
+.ceo .role{font-family:var(--label);font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--ink-soft)}
+.ceo .since{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:22px}
+.ceo .since b{font-family:var(--sans);font-weight:200;letter-spacing:.06em;font-size:clamp(46px,5vw,80px);line-height:.8}
+.ceo .since span{font-family:var(--label);font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-soft);text-align:right}
+
+/* ---------- pillars ---------- */
+.pillars{list-style:none;margin:0;padding:0;border-top:1px solid var(--line-soft)}
+.pillars li{display:grid;grid-template-columns:70px 1fr;gap:10px;padding:clamp(16px,1.8vw,24px) 0;border-bottom:1px solid var(--line-soft)}
+.pillars .n{font-family:var(--sans);font-weight:200;font-size:clamp(30px,2.6vw,42px);line-height:1}
+.pillars h3{font-size:clamp(16px,1.3vw,20px);margin-bottom:6px}
+.pillars p{margin:0;color:var(--ink-soft);font-size:15.5px}
+
+/* ---------- clientes ---------- */
+.feat{display:grid;grid-template-columns:1fr 2fr 1fr;gap:var(--gap);align-items:stretch}
+.feat .colm .fig img{position:absolute;inset:0}
+.feat .colm{display:grid;grid-template-rows:1fr 1fr;gap:var(--gap)}
+.feat .colm .fig{aspect-ratio:auto;height:100%}
+.feat .big{aspect-ratio:4/5}
+
+/* ---------- instagram ---------- */
+.ig{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap)}
+.ig a{position:relative;display:block}
+.ig a .fig img{transition:transform 1.4s var(--ease),filter .8s}
+.ig a::after{content:"";position:absolute;inset:0;background:rgba(94,58,49,.0);transition:background .6s}
+.ig a:hover .fig img{transform:scale(1.05)}
+.ig a:hover::after{background:rgba(94,58,49,.18)}
+.ig a svg{position:absolute;z-index:2;left:50%;top:50%;width:34px;height:34px;margin:-17px 0 0 -17px;color:#fff;opacity:0;transform:scale(.8);transition:opacity .5s,transform .6s var(--ease)}
+.ig a:hover svg{opacity:1;transform:none}
+.ig-foot{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:clamp(28px,3vw,44px);flex-wrap:wrap}
+.ig-foot .handle{font-family:var(--serif);letter-spacing:.1em;font-size:clamp(20px,1.7vw,28px)}
+
+/* ---------- visite ---------- */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);align-items:stretch}
+.visit .right{display:grid;grid-template-rows:1fr auto;gap:var(--gap)}
+.map{position:relative;overflow:hidden;background:var(--bg-deep);min-height:260px}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:sepia(.25) saturate(.85) hue-rotate(-12deg) contrast(.96)}
+.map .ph{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--label);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft)}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:28px var(--gap)}
+.info h3{font-family:var(--label);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--rose-dark);margin-bottom:12px}
+.info address{font-style:normal;line-height:1.6}
+.hours{width:100%;border-collapse:collapse;font-size:15px}
+.hours td{padding:3px 0;border-bottom:1px solid var(--line-soft)}
+.hours td:last-child{text-align:right}
+.hours tr.today td{color:var(--ink);font-weight:500}
+.hours tr:not(.today) td{color:var(--ink-soft)}
+.status{display:inline-flex;align-items:center;gap:10px;margin-top:12px;font-family:var(--label);font-size:11px;letter-spacing:.22em;text-transform:uppercase}
+.status i{width:7px;height:7px;border-radius:50%;background:#B9A19A}
+.status.open i{background:#8FA87C;box-shadow:0 0 0 0 rgba(143,168,124,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(143,168,124,0)}100%{box-shadow:0 0 0 0 rgba(143,168,124,0)}}
+.visit .btns{grid-column:1/-1}
+.visit .btns .btn{flex:1}
+
+/* ---------- final ---------- */
+.final{text-align:center;padding-bottom:var(--sec)}
+.final .lg{width:min(70vw,520px);margin:0 auto clamp(40px,5vw,70px)}
+.final h2{max-width:14em;margin:0 auto clamp(22px,2.4vw,32px)}
+.final .lead{margin:0 auto clamp(34px,3.6vw,52px)}
+.final .slogan{margin-top:clamp(56px,6vw,90px);font-family:var(--serif);letter-spacing:.1em;font-size:clamp(22px,2.2vw,36px)}
+.final .btns{justify-content:center}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line-soft);padding:clamp(48px,6vw,80px) 0 28px;font-size:14.5px}
+.fgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:var(--gap)}
+.fgrid h4{font-family:var(--label);font-weight:400;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--rose-dark);margin:0 0 16px}
+.fgrid ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.fgrid a:hover{color:var(--rose-dark)}
+.fgrid .lg{width:150px;margin-bottom:20px}
+.fbot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:clamp(40px,5vw,64px);padding-top:22px;border-top:1px solid var(--line-soft);font-family:var(--label);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft)}
+
+/* ---------- responsive ---------- */
+@media (max-width:1100px){
+  .nav{display:none}
+  .hdr .wrap{grid-template-columns:1fr auto auto}
+  .hdr .btn{display:none}
+  .burger{display:block}
+  .vgrid{grid-template-columns:repeat(4,1fr)}
+  .vgrid .it:last-child{display:none}
+  .tri{grid-template-columns:1fr 1fr}
+  .tri .txt{grid-column:1/-1;order:-1;gap:28px;padding:0}
+}
+@media (max-width:860px){
+  :root{--hdr:66px}
+  .sec-head{grid-template-columns:1fr;align-items:start}
+  .sec-head .lead{justify-self:start}
+  .hero .grid,.split,.idx,.visit{grid-template-columns:1fr}
+  .hero .fig{height:auto;width:100%;order:-1}
+  .hero .txt{gap:34px}
+  .split.rev .txt{order:0}
+  .split .txt{gap:34px}
+  .tri{grid-template-columns:1fr 1fr}
+  .tri .txt{grid-column:1/-1;order:-1;gap:28px;padding:0}
+  .idx .stack{order:-1}
+  .feat{grid-template-columns:1fr 1fr}
+  .feat .big{grid-column:1/-1;order:-1}
+  .feat .colm{grid-template-rows:none;grid-template-columns:1fr}
+  .feat .colm .fig{aspect-ratio:4/5;height:auto}
+  .ig{grid-template-columns:repeat(2,1fr)}
+  .vgrid{grid-template-columns:repeat(2,1fr)}
+  .vgrid .it:last-child{display:flex;grid-column:1/-1}
+  .visit .right{grid-template-rows:auto auto}
+  .map{aspect-ratio:4/3;min-height:0}
+  .fgrid{grid-template-columns:1fr 1fr}
+  .fgrid>div:first-child{grid-column:1/-1}
+  .cf-bar{grid-template-columns:1fr;justify-items:center;text-align:center}
+  .cf-dots{display:none}
+  .sec-num{display:none}
+}
+@media (max-width:560px){
+  .cf-stage{--cw:66vw}
+  .info{grid-template-columns:1fr}
+  .btns .btn{flex:1 1 100%}
+  .hero .meta .scroll-cue{display:none}
+  .visit .btns .btn{flex:1 1 100%}
+  .idx .t{font-size:18px}
+  .idx button{grid-template-columns:40px 1fr}
+  .ceo .since{flex-direction:column;align-items:flex-start}
+  .ceo .since span{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .rv,.rv-img,.rv-ln .ln>span,.rv-img img{opacity:1!important;transform:none!important;clip-path:none!important}
+  #intro{display:none}
+}
+</style>
+</head>
+<body class="locked">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- reusable logo -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs id="logoDefs"></defs>
+  <symbol id="wana" viewBox="0 0 410 99"><g id="wanaG"></g></symbol>
+</svg>
+
+<div id="intro" aria-hidden="true">
+  <svg class="lg" viewBox="0 0 410 99" id="introLogo"></svg>
+  <p class="by"><span class="metal">Vista-se de felicidade!</span></p>
+</div>
+
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Closet Wana — início"><svg viewBox="0 0 410 99" role="img" aria-label="WANA"><use href="#wana"/></svg></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#inicio">Início</a><a href="#manifesto">A Wana</a><a href="#colecoes">Coleções</a><a href="#cores">Curadoria</a><a href="#instagram">Instagram</a><a href="#visite">Visite-nos</a>
+    </nav>
+    <a class="btn btn--solid" href="#colecoes">Encontre seu estilo</a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mnav"><i></i><i></i></button>
+  </div>
+</header>
+<nav class="mnav" id="mnav" aria-label="Menu móvel">
+  <a class="big" href="#inicio"><small>01</small>Início</a>
+  <a class="big" href="#manifesto"><small>02</small>A Wana</a>
+  <a class="big" href="#colecoes"><small>03</small>Coleções</a>
+  <a class="big" href="#cores"><small>04</small>Curadoria</a>
+  <a class="big" href="#instagram"><small>05</small>Instagram</a>
+  <a class="big" href="#visite"><small>06</small>Visite-nos</a>
+  <a class="btn btn--solid" href="#colecoes">Encontre seu estilo</a>
+  <p class="mfoot">Cristo Redentor · João Pessoa · PB</p>
+</nav>
+
+<main id="conteudo">
+
+<!-- 01 HERO -->
+<section class="hero" id="inicio">
+  <div class="wrap grid">
+    <div class="txt">
+      <div>
+        <p class="eyebrow rv">Moda feminina · João Pessoa</p>
+        <h1 class="rv-ln"><span class="ln"><span>Seu estilo</span></span><span class="ln"><span><em class="metal">tem cores.</em></span></span><span class="ln"><span>A Wana tem</span></span><span class="ln"><span class="metal">combinações.</span></span></h1>
+      </div>
+      <div>
+        <p class="lead rv d1">Peças que unem delicadeza, feminilidade e versatilidade para compor produções cheias de personalidade. Descubra novas possibilidades de vestir quem você é.</p>
+        <div class="btns rv d2">
+          <a class="btn btn--solid" href="#manifesto">Conheça a Wana</a>
+          <a class="btn btn--line" href="#cores">Explore nosso universo</a>
+        </div>
+      </div>
+      <div class="meta rv d3"><span>Cristo Redentor · JP</span><a class="scroll-cue" href="#manifesto">Role <i></i></a><span>Desde 2020</span></div>
+    </div>
+    <figure class="fig rv-img">
+      <img src="m/hero-l.webp" srcset="m/hero-s.webp 600w, m/hero-l.webp 1440w" sizes="(max-width: 860px) 100vw, 46vw" width="1440" height="1800" alt="Modelo com vestido branco de capa fluida diante de cortina de correntes douradas" fetchpriority="high" decoding="async">
+    </figure>
+  </div>
+</section>
+
+
+<!-- 02 MANIFESTO -->
+<section id="manifesto" class="inv">
+  <span class="sec-num">02 — Manifesto</span>
+  <div class="wrap tri">
+    <figure class="fig rv-img" data-par><img src="m/camp-cape-full-l.webp" srcset="m/camp-cape-full-s.webp 600w, m/camp-cape-full-l.webp 1080w" sizes="(max-width:860px) 50vw, 30vw" width="1080" height="1350" loading="lazy" decoding="async" alt="Vestido branco midi com capa de chiffon e sandálias douradas"></figure>
+    <div class="txt">
+      <p class="eyebrow c rv">A Wana</p>
+      <h2 class="rv-ln"><span class="ln"><span>Não é sobre vestir</span></span><span class="ln"><span>qualquer peça.</span></span><span class="ln"><span><em class="metal">É sobre encontrar</em></span></span><span class="ln"><span><em class="metal">a sua.</em></span></span></h2>
+      <p class="rv d1">Cada mulher tem seu jeito de combinar, experimentar e se expressar. Na Wana, acreditamos que a roupa certa vai além da aparência: ela acompanha seus momentos, valoriza sua personalidade e faz você se sentir ainda mais bonita.</p>
+      <p class="sig rv d2"><b class="metal">Vista-se de felicidade 💕</b>Closet Wana · João Pessoa</p>
+    </div>
+    <figure class="fig rv-img" data-par><img src="m/camp-shirt-full-l.webp" srcset="m/camp-shirt-full-s.webp 600w, m/camp-shirt-full-l.webp 1080w" sizes="(max-width:860px) 50vw, 30vw" width="1080" height="1350" loading="lazy" decoding="async" alt="Conjunto de camisa e calça pantalona brancas com clutch marrom"></figure>
+  </div>
+</section>
+
+<!-- 03 CORES -->
+<section id="cores">
+  <span class="sec-num">03 — Curadoria de cores</span>
+  <div class="wrap">
+    <div class="split">
+      <div class="txt">
+        <div class="top">
+          <p class="eyebrow rv">Curadoria</p>
+          <h2 class="rv-ln"><span class="ln"><span>Um arsenal de cores.</span></span><span class="ln"><span><em class="metal">Infinitas possibilidades</em></span></span><span class="ln"><span>de se vestir.</span></span></h2>
+        </div>
+        <p class="quote rv d1">“Aqui na Wana temos um arsenal de cores, e estamos esperando você para garantir as suas.”</p>
+        <p class="lead rv d2">Dos tons mais delicados às estampas que despertam olhares, cada escolha abre espaço para uma nova combinação.</p>
+      </div>
+      <figure class="fig rv-img" data-par><img src="m/cor-regatas-l.webp" srcset="m/cor-regatas-s.webp 600w, m/cor-regatas-l.webp 1080w" sizes="(max-width:860px) 100vw, 46vw" width="1080" height="1350" loading="lazy" decoding="async" alt="Regatas canelada empilhadas em preto, marinho, vinho, verde e off-white"></figure>
+    </div>
+    <div class="cf rv" id="cfProd" aria-roledescription="carrossel" aria-label="Peças da Wana"></div>
+  </div>
+</section>
+
+<!-- 04 COLECOES -->
+<section id="colecoes">
+  <span class="sec-num">04 — Coleções</span>
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow rv">Coleções</p><h2 class="rv-ln"><span class="ln"><span>Peças que encontram</span></span><span class="ln"><span><em class="metal">diferentes versões</em> de você.</span></span></h2></div>
+      <p class="lead rv d1">Uma curadoria pensada por categoria, para cada momento do seu dia. Toque em uma linha para ver.</p>
+    </div>
+    <div class="idx">
+      <ol id="idxList"></ol>
+      <figure class="fig stack rv-img" id="idxStack"></figure>
+    </div>
+    <p class="idx-note rv">As categorias apresentam a curadoria da loja. Disponibilidade de peças, cores e tamanhos na Wana.</p>
+  </div>
+</section>
+
+<!-- 05 VERSATILIDADE -->
+<section id="versatilidade">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow rv">Versatilidade</p><h2 class="rv-ln"><span class="ln"><span>Uma escolha.</span></span><span class="ln"><span><em class="metal">Diferentes maneiras</em></span></span><span class="ln"><span>de ser você.</span></span></h2></div>
+      <p class="lead rv d1">Peças que acompanham sua rotina e se transformam junto com seu estilo. Porque elegância também está na liberdade de criar novas combinações.</p>
+    </div>
+    <div class="vgrid" id="vgrid"></div>
+  </div>
+</section>
+
+<!-- 06 VIDEOS -->
+<section id="movimento" class="inv">
+  <span class="sec-num">06 — Em movimento</span>
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow rv">Wana em movimento</p><h2 class="rv-ln"><span class="ln"><span>O caimento,</span></span><span class="ln"><span><em class="metal">o brilho, o movimento.</em></span></span></h2></div>
+      <p class="lead rv d1">Algumas peças só se revelam por inteiro quando se movem. O vídeo da vez toca no centro.</p>
+    </div>
+    <div class="cf rv" id="cfVid" aria-roledescription="carrossel" aria-label="Vídeos da Wana"></div>
+  </div>
+</section>
+
+<!-- 07 CEO -->
+<section id="wanessa" class="ceo">
+  <span class="sec-num">07 — Fundadora</span>
+  <div class="wrap split">
+    <figure class="fig rv-img" data-par><img src="m/ceo-l.webp" srcset="m/ceo-s.webp 600w, m/ceo-l.webp 1080w" sizes="(max-width:860px) 100vw, 46vw" width="1080" height="1350" loading="lazy" decoding="async" alt="Wanessa Gomes, fundadora e CEO da Closet Wana, com blazer e saia brancos"></figure>
+    <div class="txt">
+      <div>
+        <p class="role rv">Fundadora &amp; CEO</p>
+        <h2 class="name rv-ln"><span class="ln"><span class="metal">Wanessa</span></span><span class="ln"><span class="metal">Gomes</span></span></h2>
+        <p class="quote rv d1">“Desde 2020 sonhando com a WANA.”</p>
+      </div>
+      <p class="rv d2">Da sacola ao provador, a Wana leva a assinatura de Wanessa: trazer as melhores combinações de cores e estampas, com um atendimento personalizado, para que cada mulher se sinta linda cada vez que sair de casa.</p>
+      <div class="since rv d3"><b class="metal">2020</b><span>Wana<br>by Wanessa Gomes</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 EXPERIENCIA -->
+<section id="experiencia" class="inv">
+  <span class="sec-num">08 — Experiência</span>
+  <div class="wrap split">
+    <div class="txt">
+      <div class="top">
+        <p class="eyebrow rv">Experiência Wana</p>
+        <h2 class="rv-ln" style="font-size:clamp(32px,3.6vw,60px)"><span class="ln"><span>Mais do que escolher roupas,</span></span><span class="ln"><span><em class="metal">encontrar combinações</em></span></span><span class="ln"><span>que fazem sentido.</span></span></h2>
+        <p class="rv d1">Na Wana, cada escolha merece atenção. Nosso atendimento personalizado é pensado para ajudar você a descobrir cores, estampas e peças que combinam com seu jeito de ser.</p>
+      </div>
+      <ol class="pillars">
+        <li class="rv"><span class="n metal">01</span><div><h3>Curadoria</h3><p>Combinações de cores e estampas que valorizam cada produção.</p></div></li>
+        <li class="rv d1"><span class="n metal">02</span><div><h3>Personalidade</h3><p>Peças que permitem expressar diferentes versões do seu estilo.</p></div></li>
+        <li class="rv d2"><span class="n metal">03</span><div><h3>Acolhimento</h3><p>Um atendimento personalizado para tornar sua experiência ainda mais especial.</p></div></li>
+      </ol>
+    </div>
+    <figure class="fig rv-img" data-par><img src="m/exp-sacola-l.webp" srcset="m/exp-sacola-s.webp 600w, m/exp-sacola-l.webp 1080w" sizes="(max-width:860px) 100vw, 46vw" width="1080" height="1350" loading="lazy" decoding="async" alt="Sacola WANA by Wanessa Gomes com laço vermelho e buquê de rosas"></figure>
+  </div>
+</section>
+
+<!-- 09 CLIENTES -->
+<section id="clientes">
+  <span class="sec-num">09 — Clientes</span>
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow rv">Clientes</p><h2 class="rv-ln"><span class="ln"><span>Elas vestem</span></span><span class="ln"><span><em class="metal">Wana.</em></span></span></h2></div>
+      <p class="lead rv d1">Os cliques que as clientes compartilham com a gente — cada uma com o seu jeito de combinar.</p>
+    </div>
+    <div class="feat">
+      <div class="colm">
+        <figure class="fig rv-img"><img src="m/cli-v06-l.webp" srcset="m/cli-v06-s.webp 480w, m/cli-v06-l.webp 720w" sizes="(max-width:860px) 50vw, 22vw" width="720" height="900" loading="lazy" decoding="async" alt="Cliente segurando sacolas rosas da Closet Wana"></figure>
+        <figure class="fig rv-img d1"><img src="m/cli-f07-l.webp" srcset="m/cli-f07-s.webp 600w, m/cli-f07-l.webp 1080w" sizes="(max-width:860px) 50vw, 22vw" width="1080" height="1350" loading="lazy" decoding="async" alt="Cliente sorrindo com vestido listrado e jaqueta preta"></figure>
+      </div>
+      <figure class="fig big rv-img"><img src="m/cli-f05-l.webp" srcset="m/cli-f05-s.webp 600w, m/cli-f05-l.webp 1080w" sizes="(max-width:860px) 100vw, 46vw" width="1080" height="1350" loading="lazy" decoding="async" alt="Cliente com blusa branca e calça verde-menta diante de um quadro colorido"></figure>
+      <div class="colm">
+        <figure class="fig rv-img d1"><img src="m/cli-f11-l.webp" srcset="m/cli-f11-s.webp 600w, m/cli-f11-l.webp 1080w" sizes="(max-width:860px) 50vw, 22vw" width="1080" height="1350" loading="lazy" decoding="async" alt="Cliente em ensaio fotográfico com blusa magenta e calça branca"></figure>
+        <figure class="fig rv-img d2"><img src="m/cli-f02-l.webp" srcset="m/cli-f02-s.webp 600w, m/cli-f02-l.webp 1080w" sizes="(max-width:860px) 50vw, 22vw" width="1080" height="1350" loading="lazy" decoding="async" alt="Cliente com macaquinho vermelho"></figure>
+      </div>
+    </div>
+    <div class="cf rv" id="cfCli" aria-roledescription="carrossel" aria-label="Fotos de clientes"></div>
+  </div>
+</section>
+
+<!-- 10 INSTAGRAM -->
+<section id="instagram" class="inv">
+  <span class="sec-num">10 — Instagram</span>
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow rv">@closet.wana</p><h2 class="rv-ln"><span class="ln"><span>A Wana também</span></span><span class="ln"><span><em class="metal">acontece por aqui.</em></span></span></h2></div>
+      <p class="lead rv d1">Novas inspirações, combinações e possibilidades para acompanhar seu estilo.</p>
+    </div>
+    <div class="ig" id="igGrid"></div>
+    <div class="ig-foot rv">
+      <span class="handle metal">@closet.wana</span>
+      <a class="btn btn--solid" href="https://www.instagram.com/closet.wana" target="_blank" rel="noopener">Acompanhe a Wana <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- 11 VISITE -->
+<section id="visite">
+  <span class="sec-num">11 — Visite-nos</span>
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow rv">Visite a loja</p><h2 class="rv-ln" style="font-size:clamp(32px,3.8vw,62px)"><span class="ln"><span>Sua próxima combinação favorita</span></span><span class="ln"><span><em class="metal">pode estar mais perto</em> do que imagina.</span></span></h2></div>
+      <p class="lead rv d1">Venha conhecer a Closet Wana, descobrir nossas peças e encontrar novas possibilidades para compor seus looks.</p>
+    </div>
+    <div class="visit">
+      <figure class="fig rv-img" data-par><img src="m/loja-l.webp" srcset="m/loja-s.webp 600w, m/loja-l.webp 1080w" sizes="(max-width:860px) 100vw, 46vw" width="1080" height="1350" loading="lazy" decoding="async" alt="Fachada branca da loja WANA com vitrine e letreiro rosê no Cristo Redentor"></figure>
+      <div class="right">
+        <div class="map rv-img" id="map"><a class="ph" href="https://www.google.com/maps/search/?api=1&amp;query=Rua%20Jos%C3%A9%20Francisco%20da%20Silva%2C%20475%2C%20Cristo%20Redentor%2C%20Jo%C3%A3o%20Pessoa%20-%20PB" target="_blank" rel="noopener"><span style="text-align:center;line-height:2.2">Rua José Francisco da Silva, 475<br><u>Ver no Google Maps</u></span></a></div>
+        <div class="info rv">
+          <div>
+            <h3>Endereço</h3>
+            <address>Rua José Francisco da Silva, 475<br>Cristo Redentor · João Pessoa - PB<br>58070-410 · Brasil</address>
+            <p style="margin:14px 0 0"><a class="link-u" href="mailto:closet.wana@gmail.com">closet.wana@gmail.com</a></p>
+          </div>
+          <div>
+            <h3>Horário</h3>
+            <table class="hours" id="hours"><tbody>
+              <tr data-d="1"><td>Segunda</td><td>09h – 18h</td></tr>
+              <tr data-d="2"><td>Terça</td><td>09h – 18h</td></tr>
+              <tr data-d="3"><td>Quarta</td><td>09h – 18h</td></tr>
+              <tr data-d="4"><td>Quinta</td><td>09h – 18h</td></tr>
+              <tr data-d="5"><td>Sexta</td><td>09h – 18h</td></tr>
+              <tr data-d="6"><td>Sábado</td><td>09h – 15h</td></tr>
+              <tr data-d="0"><td>Domingo</td><td>Fechado</td></tr>
+            </tbody></table>
+            <span class="status" id="status"><i></i><span>—</span></span>
+          </div>
+          <div class="btns">
+            <a class="btn btn--solid" id="gmaps" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rua%20Jos%C3%A9%20Francisco%20da%20Silva%2C%20475%2C%20Cristo%20Redentor%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058070-410"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.4"/></svg>Como chegar</a>
+            <a class="btn btn--line" target="_blank" rel="noopener" href="https://waze.com/ul?q=Rua%20Jos%C3%A9%20Francisco%20da%20Silva%2C%20475%2C%20Cristo%20Redentor%2C%20Jo%C3%A3o%20Pessoa%20-%20PB&amp;navigate=yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 15.5c-1 0-1.6-.9-1.3-1.8C4 9.5 7.6 5 12.6 5 17.3 5 21 8.6 21 13c0 2.6-1.4 4.3-3.2 5.2M8.6 18.7c1.1.3 2.3.4 3.6.4"/><circle cx="7" cy="19" r="1.6"/><circle cx="15.5" cy="19" r="1.6"/><path d="M10 11h.01M15 11h.01"/></svg>Abrir no Waze</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 FINAL -->
+<section class="final" id="final">
+  <div class="wrap">
+    <svg class="lg rv" viewBox="0 0 410 99" role="img" aria-label="WANA"><use href="#wana"/></svg>
+    <h2 class="rv-ln"><span class="ln"><span>A Wana espera por você.</span></span><span class="ln"><span><em class="metal">Seu próximo look também.</em></span></span></h2>
+    <p class="lead rv d1">Descubra novas cores, experimente combinações e encontre peças que fazem você se sentir ainda mais bonita.</p>
+    <div class="btns rv d2"><a class="btn btn--solid" href="#visite">Conheça a Closet Wana</a></div>
+    <p class="slogan rv"><span class="metal">Vista-se de felicidade</span> 💕</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <svg class="lg" viewBox="0 0 410 99" role="img" aria-label="WANA"><use href="#wana"/></svg>
+        <p style="max-width:26em;color:var(--ink-soft)">Moda feminina em João Pessoa. Cores, estampas e combinações com atendimento personalizado.</p>
+      </div>
+      <div>
+        <h4>Navegue</h4>
+        <ul><li><a href="#manifesto">A Wana</a></li><li><a href="#colecoes">Coleções</a></li><li><a href="#cores">Curadoria</a></li><li><a href="#clientes">Clientes</a></li><li><a href="#visite">Visite-nos</a></li></ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul><li><a href="https://www.instagram.com/closet.wana" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/Closet.wana/" target="_blank" rel="noopener">Facebook</a></li><li><a href="mailto:closet.wana@gmail.com">closet.wana@gmail.com</a></li><li>Seg a sex 09h–18h · Sáb 09h–15h</li></ul>
+      </div>
+    </div>
+    <div class="fbot"><span>© <span id="yr">2026</span> Closet Wana · CNPJ 39.948.330/0001-49</span><span>Vista-se de felicidade 💕</span></div>
+  </div>
+</footer>
+
+<script>
+(() => {
+const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+
+/* ---------- logo (geometria do logo oficial, traço a traço) ---------- */
+const SEG = [[2.8,-10,38.87,95.05],[68.93,3.38,37.31,95.05],[67.36,3.38,99.57,94.99],[133.7,-10,98,95],[175.7,3.36,127,110],[173.7,3.36,222.4,110],[236.2,5.21,236.2,110],[234.73,5.72,302.47,93.12],[301,-10,301,93.63],[363.39,3.5,314.4,110],[361.39,3.5,409.85,110]];
+const SW = 4.1;
+const grads = (p) => SEG.map((s, i) => `<linearGradient id="${p}${i}" gradientUnits="userSpaceOnUse" x1="${s[0]}" y1="${Math.max(s[1],6)}" x2="${s[2]}" y2="${Math.min(s[3],93.6)}"><stop offset="0" stop-color="#F4CFC7"/><stop offset=".38" stop-color="#D9A99B"/><stop offset=".78" stop-color="#B68173"/><stop offset="1" stop-color="#C48F81"/></linearGradient>`).join('');
+const lines = (p, extra = '') => SEG.map((s, i) => `<line x1="${s[0]}" y1="${s[1]}" x2="${s[2]}" y2="${s[3]}" stroke="url(#${p}${i})" ${extra}/>`).join('');
+$('#logoDefs').innerHTML = grads('wg') + '<clipPath id="wclip"><rect x="0" y="6" width="410" height="87.6"/></clipPath>';
+$('#wanaG').outerHTML = `<g clip-path="url(#wclip)" fill="none" stroke-width="${SW}">${lines('wg')}</g>`;
+const intro = $('#intro'), il = $('#introLogo');
+il.innerHTML = `<defs>${grads('ig')}<clipPath id="iclip"><rect x="0" y="6" width="410" height="87.6"/></clipPath><linearGradient id="shine" gradientUnits="userSpaceOnUse" x1="-140" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/><animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="700 0" begin="1.25s" dur="1.3s" fill="freeze"/></linearGradient></defs><g clip-path="url(#iclip)" fill="none" stroke-width="${SW}">${SEG.map((s,i)=>`<line x1="${s[0]}" y1="${s[1]}" x2="${s[2]}" y2="${s[3]}" stroke="url(#ig${i})" style="animation-delay:${(i*0.07).toFixed(2)}s"/>`).join('')}${lines('ig').replace(/url\(#ig\d+\)/g,'url(#shine)').replace(/<line /g,'<line style="animation:none;stroke-dasharray:none" ')}</g>`;
+
+/* ---------- intro ---------- */
+const endIntro = () => {
+  if (intro.classList.contains('out')) return;
+  intro.classList.add('out'); document.body.classList.remove('locked');
+  setTimeout(() => { intro.classList.add('gone'); kick(); }, RM ? 0 : 700);
+  setTimeout(() => intro.classList.add('gone'), 1400);
+};
+if (RM) { intro.classList.add('gone'); document.body.classList.remove('locked'); }
+else { setTimeout(endIntro, 3300); intro.addEventListener('click', endIntro); }
+
+/* ---------- header / menu ---------- */
+const hdr = $('#hdr');
+const onScroll = () => hdr.classList.toggle('solid', scrollY > 30);
+addEventListener('scroll', onScroll, {passive: true}); onScroll();
+const burger = $('#burger');
+const toggleMenu = (open) => { document.documentElement.classList.toggle('menu-open', open); burger.setAttribute('aria-expanded', open); burger.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu'); document.body.style.overflow = open ? 'hidden' : ''; };
+burger.addEventListener('click', () => toggleMenu(!document.documentElement.classList.contains('menu-open')));
+$$('#mnav a').forEach(a => a.addEventListener('click', () => toggleMenu(false)));
+addEventListener('keydown', e => { if (e.key === 'Escape') toggleMenu(false); });
+// active nav
+const navLinks = $$('.nav a');
+const secObs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) navLinks.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id)); }), {rootMargin: '-45% 0px -50% 0px'});
+['inicio','manifesto','colecoes','cores','instagram','visite'].forEach(id => secObs.observe(document.getElementById(id)));
+
+
+
+/* ---------- media helpers ---------- */
+const pic = (n, alt, sizes = '(max-width:860px) 66vw, 26vw', lazy = true, small = 600, big = 1080) =>
+  `<img src="m/${n}-l.webp" srcset="m/${n}-s.webp ${small}w, m/${n}-l.webp ${big}w" sizes="${sizes}" width="${big}" height="${Math.round(big*1.25)}" ${lazy ? 'loading="lazy"' : ''} decoding="async" alt="${alt}">`;
+
+/* ---------- coleções ---------- */
+const COL = [
+  ['Vestidos','Tem dias que pedem uma peça que diga tudo.','col-vestidos','Vestido longo azul-marinho de um ombro só com manga em capa'],
+  ['Conjuntos','Quando as peças se encontram, o estilo acontece.','col-conjuntos','Conjunto de cropped e short de poá com chapéu de palha'],
+  ['Macacões e macaquinhos','Uma escolha prática, uma presença marcante.','col-macacoes','Peça branca de lese franzida com bolsa de palha'],
+  ['Camisarias','Clássicos que encontram novas maneiras de surpreender.','col-camisarias','Camisa branca alongada com braceletes dourados'],
+  ['Blusas e bodies','Os detalhes que abrem espaço para novas combinações.','col-blusas','Body de renda preta com calça pantalona e cinto'],
+  ['Shorts e calças','Leveza para acompanhar o seu ritmo.','col-shorts','Short de alfaiataria branco com blusa de poá'],
+  ['Bolsas e acessórios','Porque são os detalhes que completam a intenção.','col-bolsas','Costas de conjunto azul com bolsa branca e braceletes dourados'],
+];
+const idxList = $('#idxList'), idxStack = $('#idxStack');
+idxList.innerHTML = COL.map((c, i) => `<li${i ? '' : ' class="on"'}><button type="button" aria-controls="idxStack" aria-pressed="${!i}"><span class="n">${String(i+1).padStart(2,'0')}</span><span class="t">${c[0]}</span><span class="p">${c[1]}</span></button></li>`).join('');
+idxStack.insertAdjacentHTML('afterbegin', COL.map((c, i) => pic(c[2], c[3], '(max-width:860px) 100vw, 46vw', false).replace('<img', `<img class="${i ? '' : 'on'}"`)).join(''));
+
+let idxI = 0, idxAuto = true;
+const setIdx = (i) => { idxI = i; $$('li', idxList).forEach((li, k) => { li.classList.toggle('on', k === i); li.querySelector('button').setAttribute('aria-pressed', k === i); }); $$('img', idxStack).forEach((im, k) => im.classList.toggle('on', k === i)); };
+$$('button', idxList).forEach((b, i) => { b.addEventListener('click', () => { idxAuto = false; setIdx(i); }); b.addEventListener('mouseenter', () => { if (matchMedia('(hover:hover)').matches) { idxAuto = false; setIdx(i); } }); });
+
+/* ---------- versatilidade ---------- */
+const VERS = [['Azul','vers-azul','#8DB0DC'],['Rosa','vers-rosa','#E7A8C6'],['Vinho','vers-vinho','#7C1F2C'],['Chocolate','vers-chocolate','#4B2B1E'],['Vestida · Preto','vers-worn','#2a2220']];
+$('#vgrid').innerHTML = VERS.map((v, i) => `<div class="it"><figure class="fig rv-img ${['','d1','d2','d3','d4'][i]}">${pic(v[1], i < 4 ? `Vestido de babado com faixa na cintura na cor ${v[0].toLowerCase()}, no manequim` : 'Modelo usando o mesmo vestido de babado em preto', '(max-width:860px) 50vw, 20vw')}</figure><div class="figlab"><i style="--c:${v[2]}"></i><span>${v[0]}</span></div></div>`).join('');
+
+/* ---------- coverflow ---------- */
+const ARW = (d) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="${d ? 'M5 12h14M13 6l6 6-6 6' : 'M19 12H5M11 6l-6 6 6 6'}"/></svg>`;
+function Coverflow(root, items, opt = {}) {
+  root.innerHTML = `<div class="cf-stage"></div><div class="cf-bar"><div class="cf-cap" aria-live="polite"></div><div class="cf-ctrl"><button type="button" aria-label="Anterior">${ARW(0)}</button><span class="cf-count"></span><button type="button" aria-label="Próximo">${ARW(1)}</button></div><div class="cf-dots"></div></div>`;
+  const stage = $('.cf-stage', root), cap = $('.cf-cap', root), count = $('.cf-count', root), dots = $('.cf-dots', root);
+  const [prevB, nextB] = $$('.cf-ctrl button', root);
+  stage.innerHTML = items.map((it, i) => `<div class="cf-item" data-i="${i}" role="group" aria-label="${i+1} de ${items.length}">${it.html}</div>`).join('');
+  dots.innerHTML = items.map(() => '<i></i>').join('');
+  const els = $$('.cf-item', stage), N = items.length; let cur = 0, timer = null, visible = false, hover = false;
+  const vids = els.map(e => $('video', e));
+  const layout = () => {
+    const w = els[0].offsetWidth, narrow = innerWidth < 640, g = narrow ? 12 : Math.max(16, w * .08);
+    els.forEach((el, i) => {
+      let o = i - cur; if (o > N/2) o -= N; if (o < -N/2) o += N;
+      const a = Math.abs(o), lim = narrow ? 1 : 2;
+      const s = 1;
+      const x = o * (w + g);
+      el.style.transform = `translateX(${x}px) scale(${s})`;
+      el.style.opacity = a > lim ? 0 : a === 0 ? 1 : a === 1 ? .62 : .38;
+      el.style.zIndex = 10 - a; el.style.pointerEvents = a > lim ? 'none' : ''; el.style.visibility = a > lim + 1 ? 'hidden' : ''; el.style.visibility = a > lim + 1 ? 'hidden' : '';
+      el.style.filter = a === 0 ? 'none' : 'saturate(.8)';
+      el.classList.toggle('active', a === 0); el.setAttribute('aria-hidden', a !== 0);
+    });
+    cap.textContent = items[cur].cap || ''; count.textContent = `${String(cur+1).padStart(2,'0')} / ${String(N).padStart(2,'0')}`;
+    $$('i', dots).forEach((d, i) => d.classList.toggle('on', i === cur));
+    // lazy-load neighbors
+    [-2,-1,0,1,2].forEach(k => { const el = els[(cur + k + N) % N]; $$('img[data-src]', el).forEach(im => { im.src = im.dataset.src; im.srcset = im.dataset.srcset || ''; im.removeAttribute('data-src'); }); });
+    vids.forEach((v, i) => { if (!v) return; if (i === cur && visible) { if (v.preload !== 'auto') v.preload = 'auto'; v.currentTime = 0; const p = v.play(); if (p) p.catch(() => {}); } else v.pause(); });
+  };
+  const go = (i) => { cur = (i + N) % N; layout(); schedule(); };
+  const schedule = () => {
+    clearTimeout(timer); if (!visible || hover || RM) return;
+    const v = vids[cur]; timer = setTimeout(() => go(cur + 1), v ? Math.min((v.duration || 12), 14) * 1000 : (opt.delay || 4200));
+  };
+  vids.forEach((v, i) => { if (!v) return; v.addEventListener('timeupdate', () => { const b = $('.prog b', els[i]); if (b && v.duration) b.style.width = (v.currentTime / v.duration * 100) + '%'; }); v.addEventListener('loadedmetadata', () => { if (i === cur) schedule(); }); });
+  prevB.onclick = () => go(cur - 1); nextB.onclick = () => go(cur + 1);
+  els.forEach((el, i) => el.addEventListener('click', () => { if (i !== cur && !moved) go(i); }));
+  root.addEventListener('mouseenter', () => { hover = true; clearTimeout(timer); });
+  root.addEventListener('mouseleave', () => { hover = false; schedule(); });
+  root.tabIndex = 0; root.addEventListener('keydown', e => { if (e.key === 'ArrowRight') go(cur + 1); if (e.key === 'ArrowLeft') go(cur - 1); });
+  // swipe
+  let sx = 0, sy = 0, down = false, moved = false;
+  stage.addEventListener('pointerdown', e => { down = true; moved = false; sx = e.clientX; sy = e.clientY; });
+  stage.addEventListener('pointermove', e => { if (down && Math.abs(e.clientX - sx) > 8) moved = true; });
+  const up = e => { if (!down) return; down = false; const dx = e.clientX - sx; if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(e.clientY - sy)) go(cur + (dx < 0 ? 1 : -1)); setTimeout(() => moved = false, 50); };
+  stage.addEventListener('pointerup', up); stage.addEventListener('pointercancel', () => down = false); stage.addEventListener('pointerleave', up);
+  new IntersectionObserver(es => es.forEach(e => { visible = e.isIntersecting; if (visible) { layout(); schedule(); } else { clearTimeout(timer); vids.forEach(v => v && v.pause()); } }), {threshold: .35}).observe(root);
+  addEventListener('resize', layout); layout();
+}
+const lazyPic = (n, alt, small = 600, big = 1080) => `<img data-src="m/${n}-l.webp" data-srcset="m/${n}-s.webp ${small}w, m/${n}-l.webp ${big}w" sizes="(max-width:640px) 66vw, 26vw" width="${big}" height="${Math.round(big*1.25)}" decoding="async" alt="${alt}">`;
+
+const PROD = [
+  ['prod-calcas','Calças de alfaiataria em preto, azul e vinho','Alfaiataria em três tons'],
+  ['prod-pilha','Peças dobradas em branco, amarelo-manteiga, vermelho e jeans claro','Do branco ao jeans'],
+  ['prod-peplum','Blusa peplum vinho de alças finas no cabide','Blusa peplum vinho'],
+  ['prod-cowl','Vestido curto amarelo-manteiga com decote drapeado no manequim','Drapeado amarelo-manteiga'],
+  ['prod-brilho','Top de brilho preto com calça jeans no manequim','Brilho para a noite'],
+  ['prod-conj-branco','Conjunto branco de blusa com babados e short no manequim','Conjunto off-white'],
+  ['prod-conj-preto','Conjunto preto de blazer cropped e calça no manequim','Blazer cropped e calça'],
+];
+Coverflow($('#cfProd'), PROD.map(p => ({html: lazyPic(p[0], p[1]), cap: p[2]})));
+
+const VID = [['dourado','Capa de chiffon'],['barco','Plissado estampado'],['pier','Off-white à beira do rio'],['bolsa','Bolsa estruturada'],['mood','Mood rosa']];
+Coverflow($('#cfVid'), VID.map(v => ({html: `<video muted playsinline loop preload="none" poster="v/${v[0]}.webp" aria-label="Vídeo: ${v[1]}"><source src="v/${v[0]}.mp4" type="video/mp4"></video><span class="play" aria-hidden="true"><i></i></span><span class="prog"><b></b></span>`, cap: v[1]})));
+
+const CLI = ['f01','v03','f03','v05','f04','v07','f06','v08','f08','v09','f09','v10','f10','v11','v12','v13','v14','v15','v16','v17','v18'];
+Coverflow($('#cfCli'), CLI.map(c => ({html: c[0] === 'v' ? lazyPic('cli-' + c, 'Cliente Closet Wana usando uma peça da loja', 480, 720) : lazyPic('cli-' + c, 'Cliente Closet Wana usando uma peça da loja'), cap: 'Cliente Wana'})), {delay: 3400});
+
+/* ---------- instagram grid ---------- */
+const IG = [['ig-1','Vestido azul frente única com bolsa branca à beira do rio'],['ig-2','Retrato com capa branca e colar de pérolas e esferas douradas'],['ig-3','Conjunto de poá com chapéu de palha no píer'],['ig-4','Vestido preto com recortes laterais e bolsa clara'],['ig-5','Vestido amarelo com recortes laterais e bolsa clara'],['ig-6','Vestido off-white frente única à beira do rio']];
+const IGI = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg>`;
+$('#igGrid').innerHTML = IG.map((g, i) => `<a href="https://www.instagram.com/closet.wana" target="_blank" rel="noopener" aria-label="Ver no Instagram: ${g[1]}"><figure class="fig rv-img ${['','d1','d2'][i%3]}">${g[0] === 'ig-6' ? `<img src="v/pier.webp" width="720" height="900" loading="lazy" decoding="async" alt="${g[1]}">` : pic(g[0], g[1], '(max-width:860px) 50vw, 30vw')}</figure>${IGI}</a>`).join('');
+
+/* ---------- horário / status ---------- */
+const now = new Date(new Date().toLocaleString('en-US', {timeZone: 'America/Fortaleza'}));
+const d = now.getDay(), h = now.getHours() + now.getMinutes() / 60;
+const H = {0: null, 6: [9, 15]}; const today = H.hasOwnProperty(d) ? H[d] : [9, 18];
+$$('#hours tr').forEach(tr => tr.classList.toggle('today', +tr.dataset.d === d));
+const st = $('#status'); const open = today && h >= today[0] && h < today[1];
+st.classList.toggle('open', !!open);
+st.lastElementChild.textContent = open ? `Aberto agora · até ${today[1]}h` : (today && h < today[0] ? `Fechado · abre hoje às ${today[0]}h` : 'Fechado agora');
+$('#yr').textContent = now.getFullYear();
+
+/* ---------- mapa (carrega ao se aproximar) ---------- */
+const map = $('#map');
+new IntersectionObserver((es, o) => { if (es[0].isIntersecting) { o.disconnect(); map.insertAdjacentHTML('beforeend', '<iframe title="Mapa: Closet Wana, Rua José Francisco da Silva, 475, Cristo Redentor, João Pessoa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Rua%20Jos%C3%A9%20Francisco%20da%20Silva%2C%20475%2C%20Cristo%20Redentor%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058070-410&z=16&output=embed"></iframe>'); } }, {rootMargin: '600px'}).observe(map);
+
+/* ---------- reveals ---------- */
+let kicked = false;
+function kick() {
+  if (kicked) return; kicked = true;
+  const ro = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); ro.unobserve(e.target); } }), {rootMargin: '0px 0px -8% 0px', threshold: .08});
+  $$('.rv,.rv-img,.rv-ln').forEach(el => ro.observe(el));
+  // auto-cycles
+  setInterval(() => { if (idxAuto && document.visibilityState === 'visible') setIdx((idxI + 1) % COL.length); }, 3600);
+}
+if (RM) kick();
+setTimeout(kick, 4000); // segurança
+
+/* ---------- cortina das seções invertidas ---------- */
+const invs = $$('section.inv');
+const invRun = () => { const vh = innerHeight; invs.forEach(sec => { const r = sec.getBoundingClientRect(); const p = Math.min(1, Math.max(0, (vh - r.top) / (vh * .75))); sec.style.setProperty('--ci', RM ? '0%' : ((1 - p) * 6).toFixed(2) + '%'); }); };
+let invT = false; addEventListener('scroll', () => { if (!invT) { invT = true; requestAnimationFrame(() => { invT = false; invRun(); }); } }, {passive: true}); addEventListener('resize', invRun); invRun();
+/* entrada suave de cada seção */
+if (!RM) { const so = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); so.unobserve(e.target); } }), {rootMargin: '0px 0px -6% 0px'}); $$('main > section:not(.hero) > .wrap').forEach(w => { w.classList.add('sx'); so.observe(w); }); }
+
+/* ---------- parallax sutil ---------- */
+if (!RM && matchMedia('(min-width: 861px)').matches) {
+  const ps = $$('[data-par] img'); let tick = false;
+  const run = () => { tick = false; const vh = innerHeight; ps.forEach(im => { const r = im.parentElement.getBoundingClientRect(); if (r.bottom < 0 || r.top > vh) return; const p = (r.top + r.height / 2 - vh / 2) / vh; im.style.translate = `0 ${(p * -5).toFixed(2)}%`; im.style.scale = '1.08'; }); };
+  addEventListener('scroll', () => { if (!tick) { tick = true; requestAnimationFrame(run); } }, {passive: true}); run();
+}
+})();
+</script>
+</body>
+</html>
